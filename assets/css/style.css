@@ -1,0 +1,92 @@
+/* imported google fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+
+:root {
+  --main-color: #1abc9c;
+  --secondary-color: #16a085;
+  --text-color: #0d5748;
+  --btn-colors: #062c25;
+  --accent-color: #f1c40f;
+  --accent-gray: #aaa8a8;
+  --animation-timing: 300ms ease-in-out;
+}
+
+.navbar {
+  background: var(--main-color) !important;
+}
+.navbar .navbar-nav a {
+  color: var(--btn-colors) !important;
+}
+.navbar .navbar-nav a:active {
+  color: white !important;
+}
+.navbar .navbar-nav a:hover {
+  transform: scale(1.1);
+  transition: var(--animation-timing);
+  color: white !important;
+}
+.navbar .navbar-brand {
+  color: var(--btn-colors);
+}
+/* hero section */
+#hero {
+  background: var(--main-color);
+}
+#hero h3 {
+  color: var(--btn-colors) !important;
+}
+#hero img {
+  background: var(--btn-colors);
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+}
+#aboutme {
+  background: var(--btn-colors);
+}
+#aboutme h3 {
+  color: var(--main-color);
+}
+#aboutme p {
+  color: var(--main-color);
+}
+#aboutme .card {
+  border-radius: 1rem;
+  background: var(--main-color) !important;
+}
+@media (min-width: 920px) {
+  #aboutme .card:hover {
+    box-shadow: 0.2rem 0.2rem 0.2rem black;
+    transform: scale(1.1);
+    transition: var(--animation-timing);
+    background: var(--text-color) !important;
+  }
+}
+#aboutme .card i {
+  font-size: 1.5rem;
+  height: 100%;
+  width: 100%;
+  background: var(--text-color);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+#aboutme .btn {
+  background: var(--btn-colors);
+  color: white;
+}
+#aboutme .btn:hover {
+  background: white;
+  color: #062c25;
+}
+#portfolio {
+  background: var(--main-color);
+}
+#portfolio .btn:hover {
+  background: white;
+  color: #062c25;
+}

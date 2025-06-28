@@ -90,3 +90,6 @@
   background: white;
   color: #062c25;
 }
+#contact {
+  background: var(--main-color);
+}
